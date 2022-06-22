@@ -24,6 +24,9 @@ public class Main {
     private static double minInvestmentsAmount = 100000;
 
     public static void main(String[] args) {
+
+        System.out.println("Test test!!");
+        
         while (true) {
             System.out.println("Введите сумму доходов компании за месяц " +
                     "(от 200 до 900 тысяч рублей): ");
@@ -47,7 +50,6 @@ public class Main {
             int i = (int)(((minInvestmentsAmount + 1) / (1 - mainTaxPercent) + calculateFixedCharges()) / (1 - managerPercent));
             System.out.println("Можем инвестировать при сумме дохода:" + i);
 
-
             System.out.println("Зарплата менеджера: " + managerSalary);
             System.out.println("Общая сумма налогов: " +
                     (taxAmount > 0 ? taxAmount : 0));
@@ -58,7 +60,6 @@ public class Main {
             }
         }
     }
-
     private static boolean checkIncomeRange(int income) {
         if (income < minIncome) {
             System.out.println("Доход меньше нижней границы");
@@ -70,7 +71,6 @@ public class Main {
         }
         return true;
     }
-
     private static int calculateFixedCharges() {
         return officeRentCharge +
                 telephonyCharge +
