@@ -25,7 +25,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Test test1!!");
+        System.out.println("Test again!");
+
 
         while (true) {
             System.out.println("Введите сумму доходов компании за месяц " +
